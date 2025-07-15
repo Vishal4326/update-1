@@ -573,6 +573,7 @@ section {
 }
 /* Mobile Nav - Hidden by default */
 /* 🔴 Hamburger button - hidden by default */
+/* Hamburger styles */
 .hamburger {
   display: none;
   font-size: 1.8rem;
@@ -586,28 +587,32 @@ section {
   cursor: pointer;
 }
 
-/* 🔴 Mobile dropdown nav menu */
+/* Default mobile-nav style */
 .mobile-nav {
   display: none;
   flex-direction: column;
   position: absolute;
   top: 60px;
-  right: 20px;
+  left: 1rem;           /* ✅ aligned to left */
+  right: auto;          /* ✅ disables right overflow */
   background-color: #111;
   padding: 1rem;
   border: 2px solid #ff3131;
   border-radius: 10px;
   gap: 1rem;
   z-index: 1000;
+  width: 90%;           /* ✅ fits inside screen */
+  max-width: 300px;     /* ✅ doesn't stretch too wide */
+  box-sizing: border-box;
 }
 
-/* 🔴 Responsive rule */
-@media (max-width: 768px) {
-  .header {
-    position: relative; /* 🧠 Prevent absolute conflicts */
-    padding-bottom: 4rem; /* ⬅️ Space for menu */
-  }
+/* Show on toggle */
+.mobile-nav.show {
+  display: flex !important;
+}
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .btn-container {
     display: none;
   }
@@ -615,20 +620,4 @@ section {
   .hamburger {
     display: block;
   }
-
-  .mobile-nav {
-    top: 3.5rem; /* position below header */
-    right: 1rem;
-  }
 }
-.mobile-nav {
-  display: none;
-}
-
-.mobile-nav.show {
-  display: flex !important;
-}
-.mobile-nav {
-  outline: 2px dashed lime;
-}
-
