@@ -603,6 +603,11 @@ section {
 
 /* 🔴 Responsive rule */
 @media (max-width: 768px) {
+  .header {
+    position: relative; /* 🧠 Prevent absolute conflicts */
+    padding-bottom: 4rem; /* ⬅️ Space for menu */
+  }
+
   .btn-container {
     display: none;
   }
@@ -610,4 +615,20 @@ section {
   .hamburger {
     display: block;
   }
+
+  .mobile-nav {
+    top: 3.5rem; /* position below header */
+    right: 1rem;
+  }
 }
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav.show {
+  display: flex !important;
+}
+.mobile-nav {
+  outline: 2px dashed lime;
+}
+

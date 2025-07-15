@@ -29,13 +29,11 @@ const hamburger = document.getElementById("hamburger");
 const mobileNav = document.getElementById("mobileNav");
 
 hamburger.addEventListener("click", () => {
-  const isOpen = mobileNav.style.display === "flex";
-  mobileNav.style.display = isOpen ? "none" : "flex";
+  mobileNav.classList.toggle("show");
 });
-
 
 document.querySelectorAll(".mobile-nav .navigations").forEach(btn => {
   btn.addEventListener("click", () => {
-    mobileNav.style.display = "none";
+    mobileNav.classList.remove("show");
   });
 });
