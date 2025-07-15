@@ -24,10 +24,18 @@ if (backToTopBtn) {
     }
   });
 }
+// menu-toggle
+const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobileNav");
 
-const hamburger = document.getElementById('hamburger');
-const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener("click", () => {
+  const isOpen = mobileNav.style.display === "flex";
+  mobileNav.style.display = isOpen ? "none" : "flex";
+});
 
-hamburger.addEventListener('click', () => {
-  mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+
+document.querySelectorAll(".mobile-nav .navigations").forEach(btn => {
+  btn.addEventListener("click", () => {
+    mobileNav.style.display = "none";
+  });
 });
