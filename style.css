@@ -572,31 +572,36 @@ section {
   font-size: 15px;
 }
 /* Mobile Nav - Hidden by default */
+/* 🔴 Hamburger button - hidden by default */
 .hamburger {
   display: none;
-  font-size: 1.5rem;
-  color: #ff3131;
+  font-size: 1.8rem;
   background: none;
   border: none;
+  color: #ff3131;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
   cursor: pointer;
-  z-index: 999;
 }
 
+/* 🔴 Mobile dropdown nav menu */
 .mobile-nav {
   display: none;
   flex-direction: column;
-  gap: 1rem;
-  background-color: black;
-  padding: 1rem;
-  border: 2px solid #ff3131;
-  border-radius: 10px;
   position: absolute;
   top: 60px;
   right: 20px;
-  z-index: 998;
+  background-color: #111;
+  padding: 1rem;
+  border: 2px solid #ff3131;
+  border-radius: 10px;
+  gap: 1rem;
+  z-index: 1000;
 }
 
-/* Responsive Show */
+/* 🔴 Responsive rule */
 @media (max-width: 768px) {
   .btn-container {
     display: none;
@@ -604,8 +609,5 @@ section {
 
   .hamburger {
     display: block;
-    position: absolute;
-    top: 15px;
-    right: 20px;
   }
 }
