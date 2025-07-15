@@ -613,11 +613,32 @@ section {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .btn-container {
+  .header {
+    position: relative;
+    padding-bottom: 8rem; /* Increase this to give space below */
+  }
+
+  .mobile-nav {
+    position: absolute;
+    top: 4rem;         /* Slightly lower */
+    left: 1rem;
+    right: auto;
+    width: 90vw;       /* Make sure it fits mobile screen */
+    max-width: 300px;
     display: none;
   }
 
-  .hamburger {
-    display: block;
+  .mobile-nav.show {
+    display: flex !important;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-nav {
+    position: fixed;
+    top: 60px;
+    left: 1rem;
+    right: auto;
+    width: 90vw;
+    ...
   }
 }
