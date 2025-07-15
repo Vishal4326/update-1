@@ -639,6 +639,57 @@ section {
     left: 1rem;
     right: auto;
     width: 90vw;
-    ...
+    
+  }
+}
+/* Default: show desktop nav, hide hamburger + mobile menu */
+.btn-container {
+  display: flex;
+}
+.hamburger,
+.mobile-nav {
+  display: none;
+}
+
+/* 🔥 Mobile-specific rules */
+@media (max-width: 768px) {
+  .btn-container {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 20px;       /* ✅ hamburger to left */
+    right: auto;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #ff3131;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 1rem;       /* ✅ dropdown also from left */
+    right: auto;
+    background-color: #111;
+    padding: 1rem;
+    border: 2px solid #ff3131;
+    border-radius: 10px;
+    gap: 1rem;
+    z-index: 1000;
+    width: 90%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+
+  .mobile-nav.show {
+    display: flex !important;
   }
 }
