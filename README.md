@@ -12,7 +12,6 @@ A modern, mobile-responsive personal portfolio website showcasing my skills, pro
 - 🎨 Clean and minimal UI with custom styling
 - 🧠 Skills, Projects, About, and Contact sections
 - 📱 Mobile-friendly hamburger navigation menu
-- 👾 Anime Mode toggle with background + custom styles
 - 💡 Easy to customize and extend
 
 ## 🛠️ Tech Stack
@@ -21,7 +20,8 @@ A modern, mobile-responsive personal portfolio website showcasing my skills, pro
 - CSS3
 - JavaScript (vanilla)
 - Netlify (for hosting)
-
+##Live Demo Link(Netlify)
+- https://legendary-portfolio-of-the-century.netlify.app/
 ## 📂 Project Structure
 
 ```bash
