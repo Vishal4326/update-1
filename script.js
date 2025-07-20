@@ -53,9 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const secretMessage = document.getElementById("secretMessage");
 
   const secretText = `You really clicked 20 times huh? 😂
-Hello future Vishal.
-You're doing amazing. Keep going.
-- Past Vishal 💻 - 2025`;
+You got the spirit, my boy. Keep going!`;
 
   image.addEventListener("click", () => {
     clickCount++;
