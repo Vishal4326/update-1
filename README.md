@@ -13,6 +13,7 @@ A modern, mobile-responsive personal portfolio website showcasing my skills, pro
 - 🧠 Skills, Projects, About, and Contact sections
 - 📱 Mobile-friendly hamburger navigation menu
 - 💡 Easy to customize and extend
+- 😉 An easter egg! Find if you can.
 
 ## 🛠️ Tech Stack
 

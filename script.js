@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const secretMessage = document.getElementById("secretMessage");
 
   const secretText = `You really clicked 20 times huh? 😂
-You got the spirit, my boy. Keep going!`;
+You have found the easter egg! You got the spirit, my boy. Keep going!`;
 
   image.addEventListener("click", () => {
     clickCount++;
